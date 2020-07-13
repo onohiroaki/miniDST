@@ -9,20 +9,6 @@ Contact: shin-ichi.kawada[atmk]desy.de
 Originally triggered by Snowmass 2021 comminity planning study, but also useful for beginners who usually don't have plenty amount of knowledge of high energy physics and detector simulation.
 __These codes are under development. You can use them but your own risk. Your comments/ideas are welcome because this project is under discussion.__
 
-The full information of v0 mini-DST and v1 mini-DST are available under v0/ and v1/ directory.
-
-# Things need to be done / Things need to be discussed
-
-- Include isolated photon finder
-  - will discuss with Junping for the development
-- MCParticle should be MCParticlesSkimmed
-  - In next production? Validation samples produced with v02-01 only contain MCParticle
-- Simplify PandoraPFOs
-  - Only put single number on PID info? How to do it?
-- Simplify RecoMCTruthLink/MCTruthRecoLink. How to do it?
-- How to add number of tracks/clusters (at the event header? at the header of PandoraPFOs?)?
-- How to merge collections?
-
 # Introduction
 
 The purpose of mini-DST project is to provide a "minumum" set of data from fully-simulated (or SGV-based) MC samples.
