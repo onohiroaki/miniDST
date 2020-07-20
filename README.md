@@ -1,4 +1,4 @@
-# mini-DST project
+# mini-DST: an LCIO-based format for easy analysis of ILC simulated data
 
 These codes are used to create mini-DST files.
 
