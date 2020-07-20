@@ -36,10 +36,10 @@ We have fully-simulated MC samples named DST file which contain all information 
 In mini-DST file, the complex and intermediate collections are removed, and useful information are added, e.g.; number of isolated electrons, muons, jets,...
 
 In mini-DST file, the following collections are kept from original DST file.
-- PandoraPFOs, BCalRecoParticle (not merged yet)
-- MCParticle (MCParticlesSkimmed in next production)
+- PandoraPFOs, BCalRecoParticle
+- MCParticle
 - PrimaryVertex, PrimaryVertex_RP
-- RecoMCThuthLink, MCTruthRecoLink (kept full relation so far)
+- RecoMCThuthLink, MCTruthRecoLink
 
 The following collections/variables are added to the mini-DST file.
 - event shape variables (used ThrustReconstruction, Sphere, Fox): these are stored at the header of PandoraPFOs
