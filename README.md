@@ -1,6 +1,7 @@
 # mini-DST: an LCIO-based format for easy analysis of ILC simulated data
 
 Originally triggered by Snowmass 2021 comminity planning study, but also useful for beginners who usually are not familiar with high energy physics and detector simulation.
+This doscumentation is work in progress.
 
 # Introduction
 
