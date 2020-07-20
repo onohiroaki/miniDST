@@ -1,23 +1,21 @@
 # mini-DST: an LCIO-based format for easy analysis of ILC simulated data
 
-These codes are used to create mini-DST files.
-
-Author: Shin-ichi Kawada (DESY)
-
-Contact: shin-ichi.kawada[atmk]desy.de
-
-Originally triggered by Snowmass 2021 comminity planning study, but also useful for beginners who usually don't have plenty amount of knowledge of high energy physics and detector simulation.
-__These codes are under development. You can use them but your own risk. Your comments/ideas are welcome because this project is under discussion.__
+Originally triggered by Snowmass 2021 comminity planning study, but also useful for beginners who usually are not familiar with high energy physics and detector simulation.
 
 # Introduction
 
-The purpose of mini-DST project is to provide a "minumum" set of data from fully-simulated (or SGV-based) MC samples.
+The purpose of mini-DST is to provide a "minumum" set of data from fully-simulated (or fast simulation based) MC samples.
 When we perform physics analysis, we should use full detector simulation samples to make your analysis as realistic as possible, or, at least, fast simulation-based MC samples (like SGV-based and Delphes-based) are need to be used in the physics analysis.
 Usually, these MC samples have tons amount of information.
 These information are so important because these are the result of tracking, clustering, calibration, particle flow, and so on.
-However, for beginners, newcomers, and theorists who are typically not familiar with how to handle with it, the full information of simulation/reconstruction are too much and too complex.
-The purpose of mini-DST project is try to reduce such complexity for beginners.
-In mini-DST project, we will produce mini-DST files which have smaller file size but still contain useful information for physics analysis.
+However, for beginners and newcomers who are typically not familiar with how to handle with it, the full information of simulation/reconstruction are too much and too complex.
+The purpose of mini-DST is try to reduce such complexity for beginners.
+
+# How To Use
+The mini-DST files are directly readable with ROOT.
+You need a ROOT environment and LCIO (Linear Collider I/O) library.
+
+
 
 # Detail Description (WIP)
 
