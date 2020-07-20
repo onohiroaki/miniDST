@@ -14,14 +14,18 @@ The purpose of mini-DST is try to reduce such complexity for beginners.
 # How To Use
 The mini-DST files are directly readable with ROOT.
 You need a ROOT environment and LCIO (Linear Collider I/O) library.
-First, in your .rootlogon.C, write the following lines.
+First, in your `.rootlogon.C`, write the following lines.
+```
 {
  gInterpreter->AddIncludePath("$LCIO");
  gSystem->Load("${LCIO}/lib/liblcio.so");
  gSystem->Load("${LCIO}/lib/liblcioDict.so");
 }
+```
 Then, type
+```
 .x higgs_recoil.C(FILENAME, OUTPUTNAME)
+```
 in your ROOT session.
 You get the recoil mass plot.
 
