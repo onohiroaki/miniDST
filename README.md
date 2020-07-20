@@ -5,7 +5,7 @@ Originally triggered by Snowmass 2021 comminity planning study, but also useful 
 # Introduction
 
 The purpose of mini-DST is to provide a "minumum" set of data from fully-simulated (or fast simulation based) MC samples.
-When we perform physics analysis, we should use full detector simulation samples to make your analysis as realistic as possible, or, at least, fast simulation-based MC samples (like SGV-based and Delphes-based) are need to be used in the physics analysis.
+When we perform physics analysis, we should use full detector simulation samples to make analysis as realistic as possible, or, at least, fast simulation-based MC samples (like SGV-based and Delphes-based) are need to be used in the physics analysis.
 Usually, these MC samples have tons amount of information.
 These information are so important because these are the result of tracking, clustering, calibration, particle flow, and so on.
 However, for beginners and newcomers who are typically not familiar with how to handle with it, the full information of simulation/reconstruction are too much and too complex.
@@ -14,7 +14,16 @@ The purpose of mini-DST is try to reduce such complexity for beginners.
 # How To Use
 The mini-DST files are directly readable with ROOT.
 You need a ROOT environment and LCIO (Linear Collider I/O) library.
-
+First, in your .rootlogon.C, write the following lines.
+{
+ gInterpreter->AddIncludePath("$LCIO");
+ gSystem->Load("${LCIO}/lib/liblcio.so");
+ gSystem->Load("${LCIO}/lib/liblcioDict.so");
+}
+Then, type
+.x higgs_recoil.C(FILENAME, OUTPUTNAME)
+in your ROOT session.
+You get the recoil mass plot.
 
 
 # Detail Description (WIP)
