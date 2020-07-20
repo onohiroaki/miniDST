@@ -33,7 +33,7 @@ You get the recoil mass plot.
 # Detail Description (WIP)
 
 We have fully-simulated MC samples named DST file which contain all information and result of simulation and reconstruction.
-In mini-DST file, the complex collections are removed, and useful information are added, e.g.; number of isolated electrons, muons, jets,...
+In mini-DST file, the complex and intermediate collections are removed, and useful information are added, e.g.; number of isolated electrons, muons, jets,...
 
 In mini-DST file, the following collections are kept from original DST file.
 - PandoraPFOs, BCalRecoParticle (not merged yet)
@@ -45,6 +45,6 @@ The following collections/variables are added to the mini-DST file.
 - event shape variables (used ThrustReconstruction, Sphere, Fox): these are stored at the header of PandoraPFOs
 - IsolatedMuons, IsolatedElectrons (used IsolatedLeptonTagging, not tuned)
 - IsolatedTaus (used TauFinder, not tuned)
-- (IsolatedPhotons) (future)
+- IsolatedPhotons (used IsolatedPhotonTaggingProcessor, not tuned)
 - RefinedNJets (N = 2, 3, 4, 5, 6) (used LCFIPlus: JetClustering, JetVertexRefiner, FlavorTag, not tuned)
 - ErrorFlow is applied to RefinedNJets to calculate covariance matrix for jets.
