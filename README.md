@@ -14,7 +14,7 @@ The purpose of mini-DST is try to reduce such complexity for beginners.
 # How To Use
 The mini-DST files are directly readable with ROOT.
 You need a ROOT environment and LCIO (Linear Collider I/O) library.
-First, in your `.rootlogon.C`, write the following lines.
+First, write the following lines in your `.rootlogon.C`.
 ```
 {
  gInterpreter->AddIncludePath("$LCIO");
