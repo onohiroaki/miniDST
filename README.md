@@ -1,6 +1,7 @@
 # mini-DST: data format for easy analysis of ILC MC
 
 The mini-DST provides easy access to simulated ILC data in a high-level format, which comprises e.g. ParticleFlow objects, isolated electrons, muons, taus, photons as well as jets. mini-DST files are readable in ROOT (as well as C++, Python, Go, Java and Julia) with the help the corresponding LCIO shared library / dictionary.
+
 mini-DST can be written from the full detector simulation and reconstruction chain, from [SGV](https://inspirehep.net/literature/1091154) and from Delphes via the [delphes2lcio](https://github.com/iLCSoft/LCIO/tree/master/examples/cpp/delphes2lcio) tool.
 
 This page offers a short introduction and a collection of usage examples.
