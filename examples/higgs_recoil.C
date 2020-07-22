@@ -101,8 +101,8 @@ void higgs_recoil_plots(const char* FILEN, TString outname = "recoil_plot") {
    double Einitial = 250.;
    // in full sim & SGV, correct for crossing angle
    if (!isDelphes) {  
-     pxinitial = 250.*0.007; 
-     Einitial = 250.049;
+     pxinitial = Einitial*0.007; 
+     Einitial = 2.*std::sqrt(std::pow(Einitial/2.,2) + std::pow(pxinitial,2));
    }
    TLorentzVector ecms(pxinitial,0.,0.,Einitial) ;
    TLorentzVector recoil = ecms - ( vm1 + vm2 ) ;
