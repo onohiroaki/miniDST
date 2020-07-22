@@ -61,15 +61,17 @@ void higgs_recoil_plots(const char* FILEN, TString outname = "recoil_plot") {
 
  // DBD & SGV
  const char* muoColName = "IsolatedMuons";
+ const char* pfoColName = "PandoraPFOs";
  bool isDelphes = false;
  
 //  // delphes2lcio
 //  const char* muoColName = "Muons";
+//  const char* pfoColName = "PFOs";
 //  bool isDelphes = true;
  
 //---------------------------------
  IO::LCReader* lcReader = IOIMPL::LCFactory::getInstance()->createLCReader() ;
- lcReader->setReadCollectionNames( { muoColName } );
+ lcReader->setReadCollectionNames( { pfoColName, muoColName } );
  lcReader->open( FILEN ) ;
   
 
