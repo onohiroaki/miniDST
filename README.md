@@ -31,7 +31,7 @@ For comprehensive SM and Higgs MC data sets in mini-DST format, please consult [
 Once you have got hold of a mini-DST file FILENAME, you can type
 
 ```
-.x higgs_recoil.C(FILENAME, OUTPUTNAME)
+.x higgs_recoil.C("FILENAME", "OUTPUTNAME")
 ```
 in your ROOT session to get a plot of the recoil mass.
 
@@ -41,26 +41,27 @@ in your ROOT session to get a plot of the recoil mass.
 The following information is available on the mini-DST:
 
 ```
----------------------------------------------------------------------------
-COLLECTION NAME               COLLECTION TYPE             EXPLANATION
-===========================================================================
-IsolatedElectrons             ReconstructedParticle         
-IsolatedMuons                 ReconstructedParticle   
-IsolatedTaus                  ReconstructedParticle
-IsolatedPhotons               ReconstructedParticle
-Refined2Jets                  ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 2 jets (Durham algorithm, plus flavour tag)
-Refined3Jets                  ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 3 jets (Durham algorithm, plus flavour tag)
-Refined4Jets                  ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 4 jets (Durham algorithm, plus flavour tag)
-Refined5Jets                  ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 5 jets (Durham algorithm, plus flavour tag)
-Refined6Jets                  ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 6 jets (Durham algorithm, plus flavour tag)
-PandoraPFOs                   ReconstructedParticle       particle flow objects from the main detector, incl. event shape variables
-BCalPFOs                      ReconstructedParticle       particle flow objects from the most forward calorimeter
-PrimaryVertex                 LCVertex                    
-PrimaryVertex_RP              ReconstructedParticle       "reconstructed particle" representing the primary vertex
-MCParticles(Skimmed)          MCParticle                    
-MCTruthRecoLink               LCRelation                  links from MCParticles to PandoraPFOs                 
-RecoMCTruthLink               LCRelation                  links from PandoraPFOs to MCParticles
----------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------
+COLLECTION NAME         COLLECTION NAME       COLLECTION TYPE             EXPLANATION
+(SGV / ILD full sim)    (Delphes) 
+=================================================================================================
+PandoraPFOs             PFOs                  ReconstructedParticle       particle flow objects from the main detector, incl. event shape variables
+IsolatedElectrons       Electrons             ReconstructedParticle         
+IsolatedMuons           Muons                 ReconstructedParticle   
+IsolatedTaus            Taus                  ReconstructedParticle
+IsolatedPhotons         Photons               ReconstructedParticle
+Refined2Jets            Durham2Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 2 jets (Durham algorithm, plus flavour tag)
+Refined3Jets            Durham3Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 3 jets (Durham algorithm, plus flavour tag)
+Refined4Jets            Durham4Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 4 jets (Durham algorithm, plus flavour tag)
+Refined5Jets            Durham5Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 5 jets (Durham algorithm, plus flavour tag)
+Refined6Jets            Durham6Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 6 jets (Durham algorithm, plus flavour tag)
+BCalPFOs                N/A                   ReconstructedParticle       particle flow objects from the most forward calorimeter
+PrimaryVertex           N/A                   LCVertex                    
+PrimaryVertex_RP        N/A                   ReconstructedParticle       "reconstructed particle" representing the primary vertex
+MCParticles(Skimmed)    MCParticle            MCParticle                    
+MCTruthRecoLink         MCTruthRecoLink       LCRelation                  links from MCParticles to PandoraPFOs                 
+RecoMCTruthLink         RecoMCTruthLink       LCRelation                  links from PandoraPFOs to MCParticles
+------------------------------------------------------------------------------------------------
 ```
 
 # usage examples
