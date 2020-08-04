@@ -13,7 +13,7 @@ For installing LCIO, and for further reading, please consult [https://github.com
 Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in ROOT - a ROOT installation.
 
 # Reading LCIO in ROOT
-You need a ROOT environment and LCIO (Linear Collider I/O) library.
+You need a ROOT environment and LCIO library.
 First, write the following lines in your `.rootlogon.C`.
 ```
 {
