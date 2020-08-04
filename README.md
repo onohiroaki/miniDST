@@ -25,7 +25,7 @@ First, write the following lines in your `.rootlogon.C`.
 After this, any [LCIO class](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1LCObject.html) can be used in your ROOT macro.
 In context of the mini-DST, you'll only need to deal with the [ReconstructedParticle](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1ReconstructedParticle.html) and the [MCParticle](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1MCParticle.html).
 
-A first example macro, calculating the Higgs recoil mass on Higgsstrahlung events with Z->mumu, can be found in [./examples/higgs_recoil.C](./examples/higgs_recoil.C). An example mini-DST file to try out the example script can be downloaded from [here](https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM). 
+A first example macro, calculating the Higgs recoil mass on Higgsstrahlung events (e+e- ---> ZH) with Z->mumu, can be found in [./examples/higgs_recoil.C](./examples/higgs_recoil.C). An example mini-DST file to try out the example script can be downloaded from [here](https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM). 
 For comprehensive SM and Higgs MC data sets in mini-DST format, please consult [http://ilcsnowmass.org/](http://ilcsnowmass.org/). 
 
 Once you have got hold of a mini-DST file FILENAME, you can type
