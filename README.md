@@ -13,7 +13,8 @@ For installing LCIO, and for further reading, please consult [https://github.com
 Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in ROOT - a ROOT installation.
 
 # Reading LCIO in ROOT
-You need a ROOT environment and LCIO library.
+You need a ROOT environment and the LCIO library. The environment variable LCIO is set either by sourcing the setup.sh script in your lcio installation directory, or when initialising a full iLCSoft installation.
+
 First, write the following lines in your `.rootlogon.C`.
 ```
 {
@@ -70,9 +71,9 @@ RecoMCTruthLink         RecoMCTruthLink       LCRelation                  links 
 ---------------------------------------------------------------------------
 PHYSICS QUANTITY             EXAMPLE MACRO                   EXPLANATION  
 ===========================================================================
-(Higgs) recoil mass          ./examples/higgs_recoil.C         
+(Higgs) recoil mass          [./examples/higgs_recoil.C](./examples/higgs_recoil.C)         
 total visible energy
-b-tag likelihood
+b-tag likelihood             [./examples/jet_btag.C](./examples/jet_btag.C)
 ...
 
 ---------------------------------------------------------------------------
