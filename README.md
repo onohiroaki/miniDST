@@ -70,7 +70,7 @@ MCTruthRecoLink         MCTruthRecoLink       LCRelation                  links 
 RecoMCTruthLink         RecoMCTruthLink       LCRelation                  links from PandoraPFOs to MCParticles
 ------------------------------------------------------------------------------------------------
 ```
-Useful LCIO utilities for seeing the detailed content of any LCIO file:
+## Useful LCIO utilities for seeing the detailed content of any LCIO file:
 
 To see for each event in the file a list of collections with their number of elements:
 ```
