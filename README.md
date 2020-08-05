@@ -71,9 +71,9 @@ RecoMCTruthLink         RecoMCTruthLink       LCRelation                  links 
 ---------------------------------------------------------------------------
 PHYSICS QUANTITY             EXAMPLE MACRO                   EXPLANATION  
 ===========================================================================
-(Higgs) recoil mass          [./examples/higgs_recoil.C](./examples/higgs_recoil.C)         
+(Higgs) recoil mass          ./examples/higgs_recoil.C        
 total visible energy
-b-tag likelihood             [./examples/jet_btag.C](./examples/jet_btag.C)
+b-tag likelihood             ./examples/jet_btag.C
 ...
 
 ---------------------------------------------------------------------------
