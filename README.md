@@ -70,11 +70,16 @@ MCTruthRecoLink         MCTruthRecoLink       LCRelation                  links 
 RecoMCTruthLink         RecoMCTruthLink       LCRelation                  links from PandoraPFOs to MCParticles
 ------------------------------------------------------------------------------------------------
 ```
-Useful LCIO utilities for seeing the detailed content of any LCIO file are:
+Useful LCIO utilities for seeing the detailed content of any LCIO file:
 
-anajob [your .slcio file] : this will give you for each event in the file a list of collections with their number of elements
-
-dumpevent [your .slcio file] [eventnumber + 1]: this will print the content of the collections in event with number eventnumber
+To see for each event in the file a list of collections with their number of elements:
+```
+anajob [your .slcio file]  
+```
+To print the content of the collections in event with number eventnumber:
+```
+dumpevent [your .slcio file] [eventnumber + 1]
+```
 
 # usage examples
 
