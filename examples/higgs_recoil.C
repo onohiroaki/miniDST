@@ -48,7 +48,7 @@ TLorentzVector v4(T* p){
  *
  */
  
-void higgs_recoil_plots(const char* FILEN, TString outname = "recoil_plot") {
+void higgs_recoil(const char* FILEN, TString outname = "recoil_plot") {
 
  int nEvents = 0  ;
  int maxEvt = 10000 ;  // change as needed
