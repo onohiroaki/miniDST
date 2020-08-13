@@ -32,7 +32,8 @@ First, write the following lines in your `.rootlogon.C`.
 After this, any [LCIO class](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1LCObject.html) can be used in your ROOT macro.
 In context of the mini-DST, you'll only need to deal with the [ReconstructedParticle](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1ReconstructedParticle.html) and the [MCParticle](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1MCParticle.html).
 
-A first example macro, calculating the Higgs recoil mass on Higgsstrahlung events (e+e- ---> ZH) with Z->mumu, can be found in [./examples/higgs_recoil.C](./examples/higgs_recoil.C). An example mini-DST file to try out the example script can be downloaded from [here](https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM). 
+# A first example macro, 
+calculating the Higgs recoil mass on Higgsstrahlung events (e+e- ---> ZH) with Z->mumu, can be found in [./examples/higgs_recoil.C](./examples/higgs_recoil.C). A mini-DST file to try out the example script can be downloaded from [here](https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM). 
 For comprehensive SM and Higgs MC data sets in mini-DST format, please consult [http://ilcsnowmass.org/](http://ilcsnowmass.org/). 
 
 Once you have got hold of a mini-DST file FILENAME, you can type
@@ -42,6 +43,29 @@ Once you have got hold of a mini-DST file FILENAME, you can type
 ```
 in your ROOT session to get a plot of the recoil mass.
 
+# A second example
+creates the same plot, but this time with the ZH signal and e+e- --->mumu jj background, dominated by e+e- ---> ZZ ---> mumujj, both normalised to 
+given values for the integrated luminosity and the beam polarisations. By standard, ILC event samples are generated with 100% beam polarisation, for
+all allowed sign combinations (usually just the two opposite-sign combinations, P(e-,e+) = (-1,+1) and (+1,-1)). Distributions for realistic polaristaion values are then created by weighting the events - [./examples/higgs_recoil_with_bkg.C](./examples/higgs_recoil_with_bkg.C) shows you how this works.
+
+It reads four input miniDST files:
+[ee -> ZH -> mumuH, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM)
+[ee -> ZH -> mumuH, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM)
+[ee -> ZZ -> mumujj, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM)
+[ee -> ZZ -> mumujj, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/KyNEFt3SFFEk6aM)
+
+Once you downloaded the input files and the macro, you can type 
+
+```
+.x higgs_recoil_bkg.C();
+```
+
+in your root session to get the resulting plot. The macro optionally takes the following arguments with the following default values:
+
+```
+const char* DIRNAME = "./", double lumi_target=900., double epol_target=-0.8, double ppol_target=+0.3, TString outname = "recoil_plot"
+```
+where DIRNAME is the directory which hosts the input miniDST files.
 
 # mini-DST content
 
