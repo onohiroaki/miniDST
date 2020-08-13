@@ -49,10 +49,11 @@ given values for the integrated luminosity and the beam polarisations. By standa
 all allowed sign combinations (usually just the two opposite-sign combinations, P(e-,e+) = (-1,+1) and (+1,-1)). Distributions for realistic polaristaion values are then created by weighting the events - [./examples/higgs_recoil_with_bkg.C](./examples/higgs_recoil_with_bkg.C) shows you how this works.
 
 It reads four input miniDST files:
--[ee -> ZH -> mumuH, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/5LmrjGWqziQfMe7)
--[ee -> ZH -> mumuH, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/3ZqPcGPELggW4bP)
--[ee -> ZZ -> mumujj, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/9gKznqtSGcBKBWY)
--[ee -> ZZ -> mumujj, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/3i3tj3adfMPfPaC)
+
+* [ee -> ZH -> mumuH, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/5LmrjGWqziQfMe7)
+* [ee -> ZH -> mumuH, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/3ZqPcGPELggW4bP)
+* [ee -> ZZ -> mumujj, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/9gKznqtSGcBKBWY)
+* [ee -> ZZ -> mumujj, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/3i3tj3adfMPfPaC)
 
 Once you downloaded the input files and the macro, you can type 
 
