@@ -66,7 +66,7 @@ in your root session to get the resulting plot. The macro optionally takes the f
 ```
 const char* DIRNAME = "./", double lumi_target=900., double epol_target=-0.8, double ppol_target=+0.3, TString outname = "recoil_plot"
 ```
-where DIRNAME is the directory which hosts the input miniDST files.https://en.cppreference.com/w/cpp/container/vector
+where DIRNAME is the directory which hosts the input miniDST files.
 
 # mini-DST content
 
