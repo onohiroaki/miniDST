@@ -12,7 +12,7 @@ LCIO is an event data model and persistency tool on which all Linear Collider da
 For installing LCIO, and for further reading, please consult [https://github.com/iLCSoft/LCIO](https://github.com/iLCSoft/LCIO).
 Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in ROOT - a ROOT installation.
 
-If you have a centOS7 computer with afs support and a /cvmfs/sft.cern.ch/ mounted, you can also use the LCIO installation at DESY by sourcing
+(Side remark, optional, not required:) IF you have a centOS7 computer with afs support and a /cvmfs/sft.cern.ch/ mounted, you can also use the LCIO installation at DESY by sourcing
 
 . /afs/desy.de/project/ilcsoft/sw/x86_64_gcc82_centos7/v02-01-01/init_ilcsoft.sh
 
