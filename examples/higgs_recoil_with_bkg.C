@@ -91,16 +91,8 @@ void higgs_recoil_with_bkg(const char* DIRNAME = "./", double lumi_target=900., 
                           "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106576.P4f_zz_h.eR.pL-00001-DST.slcio"};
 
  int nevt_per_file[nfiles]; 
- int polindex_of_file[nfiles]  = {0, 1, 0, 1}; 
  int histindex_of_file[nfiles] = {0, 0, 1, 1}; 
- 
-//  polarisation weights for {LR, RL, LL, RR} events:
-//  polweight = (1-epol_target)*(1+ppol_target)/4.; // -80%,+30% => 1.8 * 1.3 / 4. = 0.585
-//  polweight = (1+epol_target)*(1-ppol_target)/4.; // +80%,-30% => 0.2 * 0.7 / 4. = 0.035
-//  polweight = (1-epol_target)*(1-ppol_target)/4.; // -80%,-30% => 1.8 * 0.7 / 4. = 0.315
-//  polweight = (1+epol_target)*(1+ppol_target)/4.; // +80%,+30% => 0.2 * 1.3 / 4. = 0.065
   
- 
  for (int ifile = 0; ifile < nfiles; ifile++) {
    
    FILEN[ifile] = DIRNAME + FILEN[ifile];
