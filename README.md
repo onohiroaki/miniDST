@@ -50,10 +50,10 @@ all allowed sign combinations (usually just the two opposite-sign combinations, 
 
 It reads four input miniDST files:
 
-* [ee -> ZH -> mumuH, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/5LmrjGWqziQfMe7)
-* [ee -> ZH -> mumuH, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/3ZqPcGPELggW4bP)
-* [ee -> ZZ -> mumujj, P(e-,e+) = (-1,+1)] (https://desycloud.desy.de/index.php/s/9gKznqtSGcBKBWY)
-* [ee -> ZZ -> mumujj, P(e-,e+) = (+1,-1)] (https://desycloud.desy.de/index.php/s/3i3tj3adfMPfPaC)
+* [ee -> ZH -> mumuH, P(e-,e+) = (-1,+1)](https://desycloud.desy.de/index.php/s/5LmrjGWqziQfMe7)
+* [ee -> ZH -> mumuH, P(e-,e+) = (+1,-1)](https://desycloud.desy.de/index.php/s/3ZqPcGPELggW4bP)
+* [ee -> ZZ -> mumujj, P(e-,e+) = (-1,+1)](https://desycloud.desy.de/index.php/s/9gKznqtSGcBKBWY)
+* [ee -> ZZ -> mumujj, P(e-,e+) = (+1,-1)](https://desycloud.desy.de/index.php/s/3i3tj3adfMPfPaC)
 
 Once you downloaded the input files and the macro, you can type 
 
