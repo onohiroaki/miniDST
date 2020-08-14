@@ -12,16 +12,10 @@ LCIO is an event data model and persistency tool on which all Linear Collider da
 For installing LCIO, and for further reading, please consult [https://github.com/iLCSoft/LCIO](https://github.com/iLCSoft/LCIO).
 Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in ROOT - a ROOT installation.
 
-(Side remark, optional, not required:) IF you have a centOS7 computer with afs support and a /cvmfs/sft.cern.ch/ mounted, you can also use the LCIO installation at DESY by sourcing
-
-. /afs/desy.de/project/ilcsoft/sw/x86_64_gcc82_centos7/v02-01-01/init_ilcsoft.sh
-
-Note that this might be slow on first execution due to filling of the afs cache. 
-
 # Reading LCIO in ROOT
 You need a ROOT environment and the LCIO library. The environment variable LCIO is set either by sourcing the setup.sh script in your lcio installation directory, or when initialising a full iLCSoft installation.
 
-First, write the following lines in your `.rootlogon.C`.
+First, write the following lines in your `.rootlogon.C`
 ```
 {
  gInterpreter->AddIncludePath("$LCIO");
@@ -29,6 +23,11 @@ First, write the following lines in your `.rootlogon.C`.
  gSystem->Load("${LCIO}/lib/liblcioDict.so");
 }
 ```
+and add $LCIO/lib to your LD_LIBRARY_PATH:
+```
+export LD_LIBRARY_PATH=$LCIO/lib:$LD_LIBRARY_PATH
+```
+
 After this, any [LCIO class](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1LCObject.html) can be used in your ROOT macro.
 In context of the mini-DST, you'll only need to deal with the [ReconstructedParticle](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1ReconstructedParticle.html) and the [MCParticle](https://ilcsoft.desy.de/LCIO/current/doc/doxygen_api/html/classEVENT_1_1MCParticle.html).
 
