@@ -15,7 +15,7 @@ Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in 
 
 # Reading LCIO in ROOT
 You need a ROOT environment and the LCIO library.
-The environment variable LCIO is set either by sourcing the setup.sh script in your lcio installation directory, or when initialising a full iLCSoft installation.
+The environment variable LCIO is set either by sourcing the setup.sh script in your LCIO installation directory, or when initialising a full iLCSoft installation.
 
 First, write the following lines in your `.rootlogon.C`
 ```
@@ -50,7 +50,7 @@ By standard, ILC event samples are generated with 100% beam polarisation, for
 all allowed sign combinations (usually just the two opposite-sign combinations, P(e-,e+) = (-1,+1) and (+1,-1)).
 Distributions for realistic polaristaion values are then created by weighting the events - [./examples/higgs_recoil_with_bkg.C](./examples/higgs_recoil_with_bkg.C) shows you how this works.
 
-It reads four input miniDST files:
+It reads four input mini-DST files:
 
 * [ee -> ZH -> mumuH, P(e-,e+) = (-1,+1)](https://desycloud.desy.de/index.php/s/5LmrjGWqziQfMe7)
 * [ee -> ZH -> mumuH, P(e-,e+) = (+1,-1)](https://desycloud.desy.de/index.php/s/3ZqPcGPELggW4bP)
@@ -61,13 +61,13 @@ Once you downloaded the input files and the macro, you can type
 ```
 .x higgs_recoil_bkg.C();
 ```
-in your root session to get the resulting plot.
+in your ROOT session to get the resulting plot.
 In this case with quite a lot of background, since no cuts are applied (apart from two muons being present).
 The macro optionally takes the following arguments with the following default values:
 ```
 const char* DIRNAME = "./", double lumi_target=900., double epol_target=-0.8, double ppol_target=+0.3, TString outname = "recoil_plot"
 ```
-where DIRNAME is the directory which hosts the input miniDST files.
+where DIRNAME is the directory which hosts the input mini-DST files.
 
 # Now it is your turn
 Try to improve the signal-to-background ratio by applying a cut on the sum of the b-likeliness values of the two jets.
