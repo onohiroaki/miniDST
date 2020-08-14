@@ -102,7 +102,7 @@ void jet_btag(const char* FILEN, TString outname = "btag_plot") {
  gStyle->SetOptStat(10);
  //===================================================================================================
   
- TCanvas* c1 = new TCanvas("b-tag plot","b-tag plot",600,800);
+ TCanvas* c1 = new TCanvas("b-tag plot","b-tag plot",800,600);
  hbtag->Draw() ;
 
  TString outnamepdf = outname + ".pdf";
