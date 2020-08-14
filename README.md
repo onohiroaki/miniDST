@@ -13,6 +13,14 @@ LCIO is an event data model and persistency tool on which all Linear Collider da
 For installing LCIO, and for further reading, please consult [https://github.com/iLCSoft/LCIO](https://github.com/iLCSoft/LCIO).
 Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in ROOT - a ROOT installation.
 
+### set-up for OSG (or other systems with access to /cvmfs)
+To setup the a consistent set of root, gcc, cmake, python etc for compiling LCIO on the OSG, please source [setenv4LCIO.sh](setenv4LCIO.sh):
+
+```
+. ./setenv4LCIO.sh
+```
+Then follow the instructions on [https://github.com/iLCSoft/LCIO](https://github.com/iLCSoft/LCIO) for downloading and installing LCIO with root dictionaries.
+
 # Reading LCIO in ROOT
 You need a ROOT environment and the LCIO library.
 The environment variable LCIO is set either by sourcing the setup.sh script in your LCIO installation directory, or when initialising a full iLCSoft installation.
