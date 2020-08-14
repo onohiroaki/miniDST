@@ -71,7 +71,7 @@ where DIRNAME is the directory which hosts the input mini-DST files.
 
 # Now it is your turn
 Try to improve the signal-to-background ratio by applying a cut on the sum of the b-likeliness values of the two jets.
-For this, read in the ```Refined2Jets``` collection, check that it it there and contains 2 jets, and then get the b-likeliness values (MVA output between 0 and 1).
+For this, read in the ```Refined2Jets``` collection, check that it is there and contains 2 jets, and then get the b-likeliness values (MVA output between 0 and 1).
 You find an example of how to access jets and b-tag information in [./examples/jet_btag.C](./examples/jet_btag.C).
 Take a look at this (of course you can also run it if you like!) and modify your ```higgs_recoil_with_bkg.C``` such that the recoil mass histograms are only filled if the sum of the two b-likeliness values > 1.
 
@@ -85,10 +85,10 @@ COLLECTION NAME         COLLECTION NAME       COLLECTION TYPE             EXPLAN
 (SGV / ILD full sim)    (Delphes) 
 =================================================================================================
 PandoraPFOs             PFOs                  ReconstructedParticle       particle flow objects from the main detector, incl. event shape variables
-IsolatedElectrons       Electrons             ReconstructedParticle         
-IsolatedMuons           Muons                 ReconstructedParticle   
-IsolatedTaus            Taus                  ReconstructedParticle
-IsolatedPhotons         Photons               ReconstructedParticle
+IsolatedElectrons       IsolatedElectrons     ReconstructedParticle         
+IsolatedMuons           IsolatedMuons         ReconstructedParticle   
+IsolatedTaus            IsolatedTaus          ReconstructedParticle
+IsolatedPhotons         IsolatedPhotons       ReconstructedParticle
 Refined2Jets            Durham2Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 2 jets (Durham algorithm, plus flavour tag)
 Refined3Jets            Durham3Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 3 jets (Durham algorithm, plus flavour tag)
 Refined4Jets            Durham4Jets           ReconstructedParticle       PandoraPFOs minus "IsolatedX" forced into 4 jets (Durham algorithm, plus flavour tag)
@@ -97,7 +97,7 @@ Refined6Jets            Durham6Jets           ReconstructedParticle       Pandor
 BCalPFOs                N/A                   ReconstructedParticle       particle flow objects from the most forward calorimeter
 PrimaryVertex           N/A                   LCVertex                    
 PrimaryVertex_RP        N/A                   ReconstructedParticle       "reconstructed particle" representing the primary vertex
-MCParticles(Skimmed)    MCParticle            MCParticle                    
+MCParticlesSkimmed      MCParticles           MCParticle                    
 MCTruthRecoLink         MCTruthRecoLink       LCRelation                  links from MCParticles to PandoraPFOs                 
 RecoMCTruthLink         RecoMCTruthLink       LCRelation                  links from PandoraPFOs to MCParticles
 ------------------------------------------------------------------------------------------------
