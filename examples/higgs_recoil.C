@@ -114,7 +114,7 @@ void higgs_recoil(const char* FILEN, TString outname = "recoil_plot") {
  gStyle->SetOptStat(10);
  //===================================================================================================
   
- TCanvas* c1 = new TCanvas("recoil plots","recoil plot",600,800);
+ TCanvas* c1 = new TCanvas("recoil plots","recoil plot",800,600);
  hrecoilm->Draw() ;
 
  TString outnamepdf = outname + ".pdf";
