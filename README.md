@@ -115,15 +115,16 @@ dumpevent [your .slcio file] [eventnumber + 1]
 # usage examples
 
 ```
----------------------------------------------------------------------------
-PHYSICS QUANTITY             EXAMPLE MACRO                   EXPLANATION  
-===========================================================================
-(Higgs) recoil mass          ./examples/higgs_recoil.C        
+----------------------------------------------------------------------------------
+PHYSICS QUANTITY         EXAMPLE MACRO                        EXPLANATION  
+==================================================================================
+(Higgs) recoil mass      ./examples/higgs_recoil.C           signal only
+(Higgs) recoil mass      ./examples/higgs_recoil_with_bkg.C  luminosity and polarisation      
 total visible energy
-b-tag likelihood             ./examples/jet_btag.C
+b-tag likelihood         ./examples/jet_btag.C               b-tag MVA output classifier
 ...
 
----------------------------------------------------------------------------
+----------------------------------------------------------------------------------
 ```
 
 
