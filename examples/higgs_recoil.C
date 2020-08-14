@@ -118,8 +118,9 @@ void higgs_recoil(const char* FILEN, TString outname = "recoil_plot") {
  hrecoilm->Draw() ;
 
  TString outnamepdf = outname + ".pdf";
+ c1->SaveAs(outnamepdf);
+
  TString outnameRoot  = outname + ".root";
-  
  TFile outputFile (outnameRoot,"RECREATE");
  
  hrecoilm->Write();  
