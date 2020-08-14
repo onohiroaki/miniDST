@@ -1,4 +1,12 @@
 {
+ 
+// these three lines are essential, don't touch
+ 
+gInterpreter->AddIncludePath("$LCIO");
+gSystem->Load("${LCIO}/lib/liblcio.so");
+gSystem->Load("${LCIO}/lib/liblcioDict.so");
+
+// the stuff below you can adjust to your needs
 
 //ild TStyle
 TStyle* ildStyle = new  TStyle("ildStyle", "ILD Style");
@@ -81,13 +89,6 @@ ildStyle->SetLineWidth(2);
 ildStyle->cd();
 gROOT->ForceStyle();
 gStyle->ls();
-
-
-{
- gInterpreter->AddIncludePath("$LCIO");
- gSystem->Load("${LCIO}/lib/liblcio.so");
- gSystem->Load("${LCIO}/lib/liblcioDict.so");
-}
 
 
 }
