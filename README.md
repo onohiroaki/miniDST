@@ -14,7 +14,7 @@ For installing LCIO, and for further reading, please consult [https://github.com
 Prerequisite is [cmake](https://cmake.org/) and - if you'd like to read LCIO in ROOT - a ROOT installation.
 
 ### set-up for OSG (or other systems with access to /cvmfs)
-To setup the a consistent set of root, gcc, cmake, python etc for compiling LCIO on the OSG, please source [setenv4LCIO.sh](setenv4LCIO.sh):
+To setup the a consistent set of root, gcc, cmake, python etc for compiling LCIO on the OSG (or e.g. on the German NAF), please source [setenv4LCIO.sh](setenv4LCIO.sh):
 
 ```
 . ./setenv4LCIO.sh
