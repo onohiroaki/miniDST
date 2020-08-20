@@ -5,7 +5,10 @@ The mini-DST files are readable in ROOT (as well as C++, Python, Go, Java and Ju
 
 The mini-DST can be written from the full detector simulation and reconstruction chain, from [SGV](https://inspirehep.net/literature/1091154) and from Delphes via the [delphes2lcio](https://github.com/iLCSoft/LCIO/tree/master/examples/cpp/delphes2lcio) tool.
 
-This page offers a short introduction and a collection of usage examples.
+This page offers a short introduction and a collection of usage examples. You can download this package with 
+```
+git clone https://github.com/ILDAnaSoft/miniDST.git
+```
 
 # LCIO
 LCIO is an event data model and persistency tool on which all Linear Collider data sets are based, allowing easy exchange of data at various stages of the simulation / reconstruction chain.
