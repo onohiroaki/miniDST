@@ -48,7 +48,7 @@ TLorentzVector v4(T* p){
  *
  */
  
-void higgs_recoil_with_bkg(const char* DIRNAME = "./", double lumi_target=900., double epol_target=-0.8, double ppol_target=+0.3, TString outname = "recoil_plot") {
+void higgs_recoil_with_bkg(const char* DIRNAME = "./", double lumi_target=900., double epol_target=-0.8, double ppol_target=+0.3, TString outname = "recoil_plot_with_bkg") {
 
  int maxEvt = 10000 ;  // change as needed
 
@@ -85,10 +85,10 @@ void higgs_recoil_with_bkg(const char* DIRNAME = "./", double lumi_target=900., 
  lcReader->setReadCollectionNames( { pfoColName, muoColName } );
  
  const int nfiles = 4;
- TString FILEN[nfiles] = {"rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106479.Pe2e2h.eL.pR-00001-DST.slcio",
-                          "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106480.Pe2e2h.eR.pL-00001-DST.slcio",
-                          "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106575.P4f_zz_sl.eL.pR-00001-DST.slcio",
-                          "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106576.P4f_zz_h.eR.pL-00001-DST.slcio"};
+ TString FILEN[nfiles] = {"rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106479.Pe2e2h.eL.pR-00001-ILDminiDST.slcio",
+                          "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106480.Pe2e2h.eR.pL-00001-ILDminiDST.slcio",
+                          "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106575.P4f_zz_sl.eL.pR-00001-ILDminiDST.slcio",
+                          "rv01-16-p10_250.sv01-14-01-p00.mILD_o1_v05.E250-TDR_ws.I106576.P4f_zz_sl.eR.pL-00001-ILDminiDST.slcio"};
 
  int nevt_per_file[nfiles]; 
  int histindex_of_file[nfiles] = {0, 0, 1, 1}; 
