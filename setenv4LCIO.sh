@@ -1,4 +1,4 @@
-!/bin/sh
+#!/bin/sh
 
 #
 # setup environment to use right root, gcc, python and cmake for LCIO
