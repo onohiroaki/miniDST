@@ -106,8 +106,9 @@ void jet_btag(const char* FILEN, TString outname = "btag_plot") {
  hbtag->Draw() ;
 
  TString outnamepdf = outname + ".pdf";
+ c1->SaveAs(outnamepdf); 
+	
  TString outnameRoot  = outname + ".root";
-  
  TFile outputFile (outnameRoot,"RECREATE");
  
  hbtag->Write();  
