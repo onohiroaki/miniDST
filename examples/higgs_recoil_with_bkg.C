@@ -173,7 +173,7 @@ void higgs_recoil_with_bkg(const char* DIRNAME = "./", double lumi_target=900., 
  
  THStack *hs = new THStack("hs",";recoil mass [GeV]; ; ");
 
- TLegend *leg = new TLegend(0.5,0.9,0.5,0.9);
+ TLegend *leg = new TLegend(0.5,0.6,0.9,0.9);
  leg->SetHeader("ILC at 250 GeV");
 
  for (int ihist = nhistos-1; ihist > -1; ihist--) {
