@@ -58,15 +58,15 @@ void higgs_recoil(const char* FILEN, TString outname = "recoil_plot") {
  TH1F* hrecoilm    = new TH1F("hrecoilm",";recoil mass [GeV]; ; ", 100, 110. , 170. ) ;
 
 //------ collection to use: 
-//------ ALWAYS read also PandoraPFOs when reading IsolatedX collections! -------
+//------ ALWAYS read also PandoraPFOs / PFOs when reading IsolatedX collections! -------
 
- // DBD & SGV
  const char* muoColName = "IsolatedMuons";
+	
+ // DBD & SGV	
  const char* pfoColName = "PandoraPFOs";
  bool isDelphes = false;
  
 //  // delphes2lcio
-//  const char* muoColName = "Muons";
 //  const char* pfoColName = "PFOs";
 //  bool isDelphes = true;
  
