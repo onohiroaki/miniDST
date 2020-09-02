@@ -68,11 +68,12 @@ void higgs_recoil_with_bkg(const char* DIRNAME = "./", double lumi_target=900., 
  legtext[0] = "e^{+}e^{-} #rightarrow #mu^{+}#mu^{-} Higgs";
  legtext[1] = "e^{+}e^{-} #rightarrow ZZ #rightarrow #mu^{+}#mu^{-} jj";
 
-//------ collection to use: 
-//------ ALWAYS read also PandoraPFOs when reading IsolatedX collections! -------
+ //------ collection to use: 
+ //------ ALWAYS read also PandoraPFOs when reading IsolatedX collections! -------
 
+ const char* muoColName = "IsolatedMuons"; 	
+	
  // DBD & SGV
- const char* muoColName = "IsolatedMuons";
  const char* pfoColName = "PandoraPFOs";
  bool isDelphes = false;
  
