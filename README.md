@@ -86,6 +86,11 @@ For this, read in the ```Refined2Jets``` collection, check that it is there and 
 You find an example of how to access jets and b-tag information in [./examples/jet_btag.C](./examples/jet_btag.C).
 Take a look at this (of course you can also run it if you like!) and modify your ```higgs_recoil_with_bkg.C``` such that the recoil mass histograms are only filled if the sum of the two b-likeliness values > 1.
 
+# A more complete example
+
+A complete example of a simple ILC analysis can be found at [./examples/walkthrough_ana.C](./examples/walkthrough_ana.C).
+This example was developed using the DELPHES- and SGV-miniDST fast simulation, and was used in the tutorial archived  [https://indico.fnal.gov/event/45721](here).
+
 # mini-DST content
 
 The following information is available on the mini-DST:
