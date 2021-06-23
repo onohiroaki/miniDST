@@ -70,7 +70,7 @@ It reads four input mini-DST files:
 
 Once you downloaded the input files and the macro, you can type 
 ```
-.x higgs_recoil_bkg.C();
+.x higgs_recoil_with_bkg.C("[PATH TO DIRECTORY WHERE YOU PUT THE DATA FILES]");
 ```
 in your ROOT session to get the resulting plot.
 In this case with quite a lot of background, since no cuts are applied (apart from two muons being present).
