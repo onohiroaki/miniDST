@@ -5,7 +5,9 @@ The mini-DST files are readable in ROOT (as well as C++, Python, Go, Java and Ju
 
 The mini-DST can be written from the full detector simulation and reconstruction chain, from [SGV](https://inspirehep.net/literature/1091154) and from Delphes via the [delphes2lcio](https://github.com/iLCSoft/LCIO/tree/master/examples/cpp/delphes2lcio) tool.
 
-This page offers a short introduction and a collection of usage examples. You can download this package with 
+This page offers a short introduction and a collection of usage examples. Additional information can be found in the set of slides and recordings for the corresponding tutorial https://agenda.linearcollider.org/event/9264/ .
+
+You can download this package with 
 ```
 git clone https://github.com/ILDAnaSoft/miniDST.git
 ```
