@@ -11,6 +11,7 @@ You can download this package with
 ```
 git clone https://github.com/ILDAnaSoft/miniDST.git
 ```
+# if you work on the DESY NAF (or any other system with LCIO / iLCSoft installed) please skip the next paragraph!
 
 # LCIO
 LCIO is an event data model and persistency tool on which all Linear Collider data sets are based, allowing easy exchange of data at various stages of the simulation / reconstruction chain.
